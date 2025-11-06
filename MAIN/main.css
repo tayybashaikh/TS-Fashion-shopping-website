@@ -1,0 +1,271 @@
+/* Basic Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(to right,#f4f4f4,#eaeaea);
+    padding-top: 80px;
+}
+
+nav {
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(97, 5, 97);
+    color: white;
+    padding: 1px 40px;
+    position: fixed;
+    top: 0%;
+    width: 92%;
+    margin: 50;
+    font-size: 20px;
+    z-index: 1000;
+}
+nav a:hover{
+    color: rgb(97, 195, 234);
+    /*transition: 0.3s ease;*/
+}
+.active{
+    
+    color: rgb(97, 195, 234);
+}
+.logo h1 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 20;
+    padding: 20;
+    display: flex;
+}
+
+ul li {
+    margin-right: 45px;
+    text-align: center;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+}
+#openCart{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: green;
+}
+
+#openCart i{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: rgb(51, 220, 51);
+    align-items: center;
+}
+
+#main-cart-count {
+    background-color: red;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: -5px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.cart-modal h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#cart-items img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+#closeCart {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/*hero section*/
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 800px; 
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center ; /* Top पर focus करेगा */
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%; 
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    
+}
+
+.hero-text button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero-text button:hover {
+    background-color: #ff3385;
+}
+
+
+.category-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.category-card {
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.category-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.category-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff66b2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e60073;
+}
+
+.reviews-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review p {
+    font-size: 16px;
+    color: #333;
+}
+
+.review span {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ff66b2;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

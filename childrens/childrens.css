@@ -1,0 +1,362 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(212, 212, 212);
+}
+
+nav{
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(97, 5, 97);
+    color: white;
+    padding: 1px 20px;
+    position: fixed;
+    top: 0%;
+    width: 96.40%;
+    margin: 0;
+    top: 0px;
+    font-size: 20px;
+}
+.logo{
+    display: flex;
+    margin-left: 13px;
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: white;
+}
+ul li a:hover,ul li a.active{
+    color: rgb(16, 149, 149);
+    font-weight: 600;
+}
+/*add To Cart*/
+.Cart-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 68px;
+    right: 10px;
+}
+
+.add-to-cart-btn i {
+    margin-right: 8px;
+}
+
+.add-to-cart-btn:hover {
+    background-color:#45a049;
+}
+
+
+
+/*humberg icone*/
+.icon{
+    display: none;
+    align-items:center;
+    font-size: 15px;
+    margin-left: 60%; 
+   /* padding: 5px;*/
+}
+
+/*Main Page*/
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 155px;
+}
+.mainText h1{
+    font-size: 55px;
+    color: rgb(146, 11, 146);
+}
+.mainText h2{
+    font-size: 33px;
+}
+.mainText button{
+    width: 120px;
+    height: 34px;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.mainText button:hover{
+    border: 2px solid rgb(33, 1, 33);
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+.mainText img{
+    border: none;
+}
+
+
+/*Shoping Cart*/
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.Crd{
+    width: 300px;
+    padding: 20px;
+    border: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.Cards .Crd{
+    margin-inline: 22px;
+    text-align: center;
+}
+.Crd i {
+    color: rgb(147, 36, 14);
+    margin-top: -7;
+}
+.Crd h3 {
+    margin-top: 3px;
+}
+.Cards{
+    justify-content: space-between;
+}
+.Crd img{
+    width: 300px;
+    height: 340px;
+}
+.head{
+    padding: 65px;
+    text-align: center;
+}
+.head span{
+    color: orangered;
+
+}
+
+/*Reviews*/
+.revies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.revies .rCard{
+    width: 260px;
+    height: 240px;
+    background-color: #fff;
+    text-align: center;
+    padding: 13px;
+    margin-inline: 20px;
+}
+.rCard img{
+    width: 42%;
+    border-radius: 100%;
+}
+.rCard button{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(45, 227, 227);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+}
+.blog .blogCard{
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    margin-inline: 22px;
+    padding: 11px;
+    border-radius: 5px;
+}
+.blogCard img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blogCard a{
+    padding: 4px 20px;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.blogCard:hover{
+    transition: 1s easy;
+    background-color: grey;
+    cursor: pointer;
+}
+.Contact{
+    text-align: center;
+}
+.Contact input{
+    width: 340px;
+    padding: 11px;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 11px;
+    border: 2px solid black;
+    
+}
+.Contact button{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(108, 1, 108);
+    color: white;
+    font-size: 18px;
+    border: flex;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-right: 33px;
+    color: white;
+}
+
+/* item page css*/
+.itemPage{
+    display: none;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+.itemPage img{
+    width: 360px;
+}
+.itemPage .itemText{
+    margin-left: 50px;
+}
+.itemText h2{
+    color: rgb(110, 1, 110);
+}
+.itemPage input{
+    width: 30px;
+    padding: 4px;
+    font-size: 16px;
+}
+.itemText a{
+    padding: 4px 20px;
+    background-color: rgb(212,13,212);
+    color: white;
+    font-size: 18px;
+    border: flex;
+}
+.itemPage button{
+    padding: 4px 20px;
+    border-color: rgb(212,13,212);
+    color: rgb(212, 13, 212);
+    font-size: 16px;
+    width: 100px;
+}
+.itemPage button:hover{
+    background-color: rgb(248, 193, 248);
+}
+
+/* buy page*/
+.buyPage{
+    display: none;
+    width: 30%;
+    background-color: #fff;
+    padding: 22px;
+    position: absolute;
+    left: 50%;
+    right: 30%;
+    transform: translate(-50%, 40%);
+    top: -23%;
+    border-radius: 8px;
+}
+.buyText input{
+    width: 70%;
+    padding: 7px;
+    border: 2px solid black;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.buyPage .cross{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(164, 164, 164);
+    padding: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.buyText button{
+    width: 120px;
+    height: 30px;
+    background-color: rgb(9, 196, 196);
+    color: white;
+    font-size: 20px;
+    margin-right: 22px;
+    margin-top: 18px;
+    padding: 2px;
+    border-color: blueviolet;
+
+}
+.buyText select{
+    padding: 4px;
+    font-size: 18px;
+}
+
+
+
+@media only screen and  (max-width: 600px) {
+    
+nav ul{
+    display: none !important;
+}
+
+.icon{/*humberger icone*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ul{
+    display: none;
+}
+ul.showData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55px;
+    background-color: rgb(149,147,147);
+    width: 100%;
+    height: 240px;
+    gap: 20px;
+    text-align: center;
+}
+
+
+}
+
