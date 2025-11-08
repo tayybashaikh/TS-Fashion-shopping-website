@@ -117,155 +117,298 @@ ul li a {
 
 /*hero section*/
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 800px; 
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
+
 
 .hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right center ; /* Top पर focus करेगा */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.hero-text {
-    position: absolute;
-    top: 40%; 
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: left;
-    z-index: 2;
+
+.hero-section .hero-text {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;  */
 }
 
-.hero-text h1 {
-    font-size: 45px;
-    margin: 0;
+.hero-section .hero-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 2px;
 }
 
-.hero-text p {
-    font-size: 18px;
-    
+
+
+.hero-section .hero-text p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-left: 41px;
 }
 
-.hero-text button {
-    background-color: #ff66b2;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+
+.hero-section .btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
 }
+
+
 
 .hero-text button:hover {
-    background-color: #ff3385;
+  background-color: #ff3385;
 }
 
 
 .category-section {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
 }
 
 .category-card {
-    width: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: center;
-    background-color: #fff;
-    transition: 0.3s;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  background-color: #fff;
+  transition: 0.3s;
 }
 
 .category-card img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .category-card h3 {
-    margin: 10px 0;
-    color: #333;
+  margin: 10px 0;
+  color: #333;
 }
 
 .category-card a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #ff66b2;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ff66b2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .category-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .btn {
-    background-color: #ff66b2;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
+  background-color: #ff66b2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 .btn:hover {
-    background-color: #e60073;
+  background-color: #e60073;
 }
 
 .reviews-section {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .reviews-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .review {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 10px;
-    width: 70%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .review p {
-    font-size: 16px;
-    color: #333;
+  font-size: 16px;
+  color: #333;
 }
 
 .review span {
-    display: block;
-    margin-top: 5px;
-    color: #555;
+  display: block;
+  margin-top: 5px;
+  color: #555;
 }
 /*footer*/
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .social-links a {
-    color: #ff66b2;
-    text-decoration: none;
-    margin: 0 5px;
+  color: #ff66b2;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* normal desktop styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+/* ---------- Responsive Design (For Mobile) ---------- */
+@media only screen and (max-width: 600px) {
+
+  /* ---- Navigation ---- */
+  nav ul {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  ul.showData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(149,147,147);
+    width: 100%;
+    height: 240px;
+    gap: 20px;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  /* ---- Hero Section ---- */
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ✅ Text still visible over image */
+  .hero-section .hero-text {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* dark background to stay visible */
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .hero-section .hero-text h2 {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+
+  .hero-section .hero-text p {
+    font-size: 0.9rem;
+    margin-left: 0.1rem;
+  }
+
+  .hero-section .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* ---- Category Section ---- */
+  .category-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* ---- Reviews Section ---- */
+  .reviews-section h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .review {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
